@@ -5,19 +5,18 @@ A full-featured Framework7 + Vue + Webpack setup with hot-reload & css extractio
 ## Build Setup
 
 ``` bash
-# install dependencies
+# install dependencies into node_modules
 npm install
+
+# add the ne
+cordova platform add browser
+cordova platform add android
 
 # serve with hot reload at localhost:8080
 npm run dev
 
 # build for production with minification
 npm run build
-
-
-# I have al
-cordova platform add
-```
 
 # Documentation
 propdoc gives the ability to write your documentation as properties on components.
@@ -33,3 +32,4 @@ https://alligator.io/vuejs/propdoc-document-components/
 * `src/main.js` - main app file where you include/import all required libs and init app
 * `src/routes.js` - app routes
 * `src/app.vue` - main app structure/component
+
