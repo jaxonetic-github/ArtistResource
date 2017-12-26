@@ -37,25 +37,19 @@ import {siteTestData, testURL}  from './util.js';
 // Init F7 Vue Plugin
 Vue.use(Framework7Vue)
 
-    /* 
-     * Main App Entry Point:
-     *
-     * 
-     */
-
-
+/* 
+ * Initial Vue App Entry Point:  This Vue instance loads the app/city data   
+ */
     new Vue({
-      el: '#app',
+  el    : '#app',
   data  : function(){  return {siteData:'', debug:true} },
-   created: function(){
-    this.siteData = siteTestData();
-   },
+created : function(){  this.siteData = siteTestData(); },
 
       // Init Framework7 by passing parameters here
-      framework7: {
+framework7: {
         root: '#app',
         /* Uncomment to enable Material theme: */
-         //material: true,
+         material: true,
         routes: Routes,
       },
       // Register App Component
