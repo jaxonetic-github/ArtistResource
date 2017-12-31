@@ -28,10 +28,10 @@ import Framework7ThemeColors from 'framework7/dist/css/framework7.material.color
 import AppStyles from './css/app.css'
 
 // Import Routes
-import Routes from './routes.js' 
+//import Routes from './routes.js' 
 
 // Import App Component
-import CityDirectory from './templates/city-directory.vue';
+import JaxDoc from './components/DocumentationComponent.vue';//'./components/city-directory.vue';
 import {siteTestData, testURL}  from './util.js';
 
 // Init F7 Vue Plugin
@@ -50,10 +50,10 @@ framework7: {
         root: '#app',
         /* Uncomment to enable Material theme: */
          material: true,
-        routes: Routes,
+      //  routes: Routes,
       },
       // Register App Component
-      components: {   CityDirectory }
+      components: {   'jax-documentation': JaxDoc}
     })
 
 

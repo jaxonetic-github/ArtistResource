@@ -57,14 +57,15 @@ import SummaryDisplay from './summary-display.vue';
 
 /**
  * A simple checkbox component.
+ * @name  City-Directory
  * @author Alonzo Jackson
  * @description  Displays resources for artists in a particulary city
- * @module components/city-directory
+ * @module City-directory
  * @example  <city-directory   :site-data-received="{}" />
- * @name  City Directory
  * @param siteDataReceived City information (i.e. events, jobs) in json object form
+ * @requires  Detail-Display 
+ * @requires Summary-Display 
  */
-
 export default {
    name:"city-directory",
    props :{
@@ -85,7 +86,10 @@ export default {
     },
 
     methods:{
-      //updates the components navigationIndex which updates the data displayed <list-display/> and <display-table/>
+      /**
+       *  @function  navClicked updates the components navigationIndex which updates the data displayed
+       * <list-display/> and <display-table/>
+       */
       navClicked:function(newNavIndex){ this.navigationIndex=newNavIndex;}
     }, 
     components: {   'detail-display':DetailDisplay, 'summary-display':SummaryDisplay }

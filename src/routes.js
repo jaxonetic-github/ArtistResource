@@ -2,15 +2,18 @@ export default [
 //{path: '/', component: require('./pages/quoter.vue'), name:"main"},
   {
       path: '/quoter/',
-      component: require('./pages/quoter.vue')
+      component: require('./components/quoter.vue')
   },
   {
       path: '/dispatch/',
-      component: require('./pages/dispatch.vue')
+      component: require('./components/dispatch.vue')
   },
   {
       path: '/form/',
-      component: require('./pages/form.vue')
+      component: require('./components/form.vue')
+  },
+  {
+      path: '/documentation/',
+      component: require('./components/DocumentationComponent.vue')
   }
-
 ]

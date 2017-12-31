@@ -44,7 +44,9 @@ h6{color:white;margin-bottom: 0rem;}
  * @author Alonzo Jackson
  * @description  Displays detailed resources for artists in a particulary city in tabular form
  * @module components/detail-display
- * @example  <cdetail-display   :site-data-received="{}" />
+ * @example  <detail-display   :itemz="[{ title: 'Art / Sports / Dance / Theater Counselors - Harand Theatre Camp', spaceType: 'other', listingType: 'Freelance/Contract/Temp', datePosted: '04/08/2017' }, {  title: 'Dance, music school looking for a new owner', spaceType: 'Full time', listingType: 'Permanent', datePosted: '04/10/2017' }]"
+ headerz="[{ text: 'Title', sortable: true, value: 'title_value' }, { text: 'Employment  Types(s)', value: 'types' }, { text: 'Job Types', value: 'types' }, { text: 'Posted Date', value: 'types' }]"
+ title="Test Title" />
  * @name  Detail-Display
  * @param headerz  The Header Text for the Table header row
  * 

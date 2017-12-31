@@ -40,24 +40,22 @@
 /**
  * 
  * @author Alonzo Jackson
- * @description  Displays summarized resources for artists in row.
+ * @description  Displays brief announcements in an organized responsive row.
  * @module components/summary-display
- * @example  <summary-display   :articles="{}" />
+ * @example  <summary-display   :articles="[{image:'http://lorempixel.com/400/200/fashion/1', header:"David Byrne Addresses the Current Economic Crises Facing the Arts", snippet:"David Byrne's What Good Are the Arts responds to the proposed Trump administration budget cuts and an address Byrne gave at his local City Hall. Read an excerpt of his article below:"},
+      {image:'http://lorempixel.com/400/200/people/1', header:"A web archiving tool for regular users", snippet:"Rhizome has launched a new user-friendly web archiving application, Webrecorder Player, and now wants to empower regular users to take ownership of the web archiving process, and to take better grasp of access."},
+      {image:'http://lorempixel.com/400/200/nightlife/1',header:"Brian Chippendale Discusses Living and Organizing Artist-DIY Spaces", snippet:"Chippendale recalls his time spent with Fort Thunder, an independent DIY space in Providence, Rhode Island. Find an excerpt of the article below and read the entire essay at The Creative Independent."}
+      ]" />
  * @name  Summary-Display
- * @param articles  The Header Text for the Table header row
+ * @param articles  An array of promo data for a particular announcement
  * 
  */
 export default{
   name:"summary-display",
-  description: 'Displays brief announcements in an organized responsive row',
-    token: `<list-display  :articles="[]" />`,
-
+  
 
   props :{
-    articles:{type:Array,
-              note:'An array of promo data for a particular announcement' 
-
-    }
+    articles:{type:Array}
   }
   
 }
