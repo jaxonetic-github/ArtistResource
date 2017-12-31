@@ -31,7 +31,7 @@ import AppStyles from './css/app.css'
 //import Routes from './routes.js' 
 
 // Import App Component
-import JaxDoc from './components/DocumentationComponent.vue';//'./components/city-directory.vue';
+import App from './components/city-directory.vue';
 import {siteTestData, testURL}  from './util.js';
 
 // Init F7 Vue Plugin
@@ -53,7 +53,7 @@ framework7: {
       //  routes: Routes,
       },
       // Register App Component
-      components: {   'jax-documentation': JaxDoc}
+      components: {   'jax-app': App}
     })
 
 
