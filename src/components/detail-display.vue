@@ -50,7 +50,7 @@ h6{color:white;margin-bottom: 0rem;}
  title="Test Title" />
  * @name  Detail-Display
  * @param headerz  The Header Text for the Table header row
- * 
+ * @todo Implement Search
  */
 export default{
 name:'detail-display', 
