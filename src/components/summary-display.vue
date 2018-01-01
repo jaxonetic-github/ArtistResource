@@ -1,38 +1,29 @@
 <style>
 /**  change the tabbar color from default blue to black **/
-/*.row .col  { overflow:hidden; padding-right:0;    padding-left: 0.5rem;}
+/*.
 .secondary{background-color:transparent !important;  min-height:100%; color:black;}
 */</style>
 
 
 <template>
-<section>
-<article>
-<v-card class="grid">
-  
-  <v-container fluid class="px-3">
- <v-layout row wrap>
-  <v-flex xs4 v-for="article in articles" :key="article.header">
-        <v-card dark color="primary" class="secondary">
-        <v-card-media
+ 
+        <v-container fluid >
+          <v-layout row  wrap>
+            <v-flex md4 v-for="article in articles" :key="article.header">
+              <v-card flat tile dark  >
+ <v-card-media
           :src="article.image" alt="lorem"
           height="300px"
         >
         </v-card-media>
-             <v-spacer></v-spacer>
-           <v-subheader>{{article.header}}</v-subheader>
+              <v-subheader>{{article.header}}</v-subheader>
 
           <v-card-text class="px-0">{{article.snippet}}</v-card-text>
-        </v-card>
-      </v-flex>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
 
-    </v-layout>
-  </v-container>
-  
-  <v-footer class="mt-5 transparent" />
-</v-card>
-</article>
-</section>
 </template>
 
 <script>
@@ -52,10 +43,17 @@
  */
 export default{
   name:"summary-display",
-  
 
   props :{
-    articles:{type:Array}
+    articles:{type:Array},
+        size: 'md',
+      items: [
+        { text: 'Extra small (1px)', value: 'xs' },
+        { text: 'Small (4px)', value: 'sm' },
+        { text: 'Medium (8px)', value: 'md' },
+        { text: 'Large (16px)', value: 'lg' },
+        { text: 'Extra large (24px)', value: 'xl' }
+      ]
   }
   
 }
