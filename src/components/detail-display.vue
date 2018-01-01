@@ -22,7 +22,7 @@ h6{color:white;margin-bottom: 0rem;}
         
       ></v-text-field>
   </v-card-title>
-  <v-data-table :headers="headerz" :items="itemz" >
+  <v-data-table :headers="headerz" :items="itemz"   class="elevation-1">
    <!--   <template slot="headers" scope="props">
     <h6 class="text-xs-left">
       {{ props.item.text }}
@@ -30,7 +30,8 @@ h6{color:white;margin-bottom: 0rem;}
   </template>
   -->
 
-    <template slot="itemz" slot-scope="props">
+    <template slot="items" slot-scope="props">
+      <td>props.item</td>
       <td v-for=" value in Object.keys(props.item)" class="text-xs-left">{{props.item[value] }}</td>
     </template>
     </v-data-table>
