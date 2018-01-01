@@ -101,7 +101,6 @@ export default {
 </script>
 
 <style>
-v-app{min-height: 1200px}
-#update-date{font-size: 10px}
+.toolbar{top:0px;}
 #inner-nav{z-index: 9999}  /* necessary to capture mouse click when material is on*/
 </style>
