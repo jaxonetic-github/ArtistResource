@@ -101,6 +101,6 @@ export default {
 </script>
 
 <style>
-.toolbar{top:0px;}
+.toolbar{top:0px !important;}
 #inner-nav{z-index: 9999}  /* necessary to capture mouse click when material is on*/
 </style>
